@@ -1,0 +1,87 @@
+.header {
+  @include flexSpaceBetwen;
+  column-gap: 20px;
+  padding-inline: 32px;
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding-top: 20px;
+    padding-inline: 15px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 10px;
+  }
+  &-logo {
+    flex-shrink: 0;
+  }
+  &-menu {
+    @media (max-width: 1024px) {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+  &-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    @media (max-width: 767px) {
+      column-gap: 24px;
+    }
+  }
+  &-menu-link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 7px;
+    height: 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    @media (max-width: 1024px) {
+      height: 50px;
+    }
+    @media (max-width: 767px) {
+      height: 32px;
+    }
+    &.is-current::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: currentColor;
+      border-radius: 50%;
+    }
+  }
+  &-actions {
+    display: flex;
+    column-gap: 40px;
+    @media (max-width: 767px) {
+      column-gap: 15px;
+    }
+  }
+  &-burger-button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4px;
+    padding-left: 8px;
+    width: 40px;
+    height: 40px;
+    color: $color-light;
+    background-color: transparent;
+    border: $border;
+    border-radius: $border-radius;
+    @include hover {
+      color: $color-light-gray;
+      border-color: currentColor;
+    }
+    &-line {
+      top: 5px;
+      left: 5px;
+      width: 6px;
+      height: 1px;
+      background-color: currentColor;
+      box-shadow: 16px 0 0 currentColor;
+    }
+  }
+}
