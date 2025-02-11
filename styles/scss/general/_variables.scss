@@ -1,6 +1,7 @@
 // global variables
 // colors
 $color-dark: #000000;
+$color-dark-alternate: #131619;
 $color-light: #ffffff;
 $color-dark-gray: #404040;
 $color-light-gray: #c4c4c4;
@@ -11,13 +12,14 @@ $border-radius: 30px;
 // fonts
 $font-family-base: "heebo", sans-serif;
 $font-family-accent: "yantramanav", sans-serif;
-// button & inputs height
-$input-height: 54px;
 // container propertues
 $container-width: 1300px;
 $container-padding-x: 15px;
 
-$transition-duration: 0.2s;
-
+// blocks and elemtnts properties variables
+$input-height: 54px;
+$header-height: 90px;
 // paths
 // $image-path: "../../images";
+
+$transition-duration: 0.2s;

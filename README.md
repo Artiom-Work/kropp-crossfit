@@ -1,3 +1,7 @@
-# First project name
+# Kropp Fitness
 
-## Second project name
+1.  Adding a header
+
+        	Performance:
+        	Mobile version = 100%
+        	Computer version - 100%
