@@ -1,0 +1,57 @@
+.motivation {
+  &-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 18.42vw, 200px); // 18.42vw = 200px
+    @media (max-width: 1024px) {
+      padding-block: 50px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      row-gap: 30px;
+      padding-block: 30px;
+    }
+  }
+  &-card-image {
+    margin-block: -60px;
+    @media (max-width: 1919px) {
+      margin-block: -20px;
+    }
+    @media (max-width: 1024px) {
+      margin-block: 0px;
+      max-width: 30%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      max-width: 60%;
+    }
+  }
+  &-card-body {
+    margin-left: 35px;
+  }
+  &-card-title:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  &-card-description {
+    max-width: 400px;
+    &:not(:last-child) {
+      margin-bottom: 37px;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.motivation-item {
+  &:nth-child(even) {
+    background-color: $color-dark-alternate;
+    & .motivation-card {
+      flex-direction: row-reverse;
+      @media (max-width: 767px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
