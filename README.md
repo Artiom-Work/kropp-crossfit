@@ -17,3 +17,9 @@
         	Performance:
         	Mobile version - 88%
         	Computer version - 100%
+
+        Convert images to webp format and compression
+
+            Performance:
+        	Mobile version - 100%
+        	Computer version - 100%
