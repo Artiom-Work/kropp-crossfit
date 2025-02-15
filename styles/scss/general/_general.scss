@@ -74,6 +74,7 @@ p:not([class]):not(:last-child) {
     padding-right: 80px;
     background-color: transparent;
     border: $border;
+    color: $color-light;
     &::after {
       content: "";
       position: absolute;
@@ -96,7 +97,30 @@ p:not([class]):not(:last-child) {
     padding-inline: 18px;
   }
 }
-
+.input {
+  transition-duration: $transition-duration;
+  height: $input-height;
+  padding-inline: 25px;
+  width: 100%;
+  color: $color-light;
+  background-color: transparent;
+  border: 1px solid $color-light-gray;
+  border-radius: $border-radius;
+  &::placeholder {
+    color: $color-light-gray;
+  }
+  @include hover {
+    border: 1px solid $color-light;
+  }
+  &:focus {
+    outline: none;
+    background-color: $color-light-gray;
+    color: $color-dark;
+  }
+}
+.title-big {
+  font-size: clamp(24px, 3.12vw, 60px);
+}
 .title-medium {
   font-size: clamp(20px, 2.08vw, 40px);
   line-height: 1.3;
@@ -126,6 +150,11 @@ p:not([class]):not(:last-child) {
     opacity: 0.5;
     -webkit-text-stroke: 1px $color-light-gray;
     text-stroke: 1px $color-light-gray;
+  }
+  &.centered::after {
+    top: -0.55em;
+    left: 50%;
+    translate: -50% 0;
   }
 }
 // .lock-body {

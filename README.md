@@ -23,3 +23,9 @@
             Performance:
         	Mobile version - 100%
         	Computer version - 100%
+
+4.  Adding a section training-types
+
+        	Performance:
+        	Mobile version - 100%
+        	Computer version - 100%
