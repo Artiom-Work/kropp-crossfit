@@ -29,3 +29,9 @@
         	Performance:
         	Mobile version - 100%
         	Computer version - 100%
+
+5.  Adding a section join-us
+
+        	Performance:
+        	Mobile version - 100%
+        	Computer version - 100%
