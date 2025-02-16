@@ -96,16 +96,6 @@
     }
   }
 
-  &-subtitle {
-    font-size: 20px;
-    line-height: 1.65;
-    text-transform: uppercase;
-    text-align: center;
-    color: $color-light;
-    @media (max-width: 767px) {
-      font-size: 16px;
-    }
-  }
   &-body {
     display: flex;
     justify-content: center;

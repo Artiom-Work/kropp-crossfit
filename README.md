@@ -35,3 +35,9 @@
         	Performance:
         	Mobile version - 100%
         	Computer version - 100%
+
+6.  Adding a section location
+
+        	Performance:
+        	Mobile version - 100%
+        	Computer version - 100%
