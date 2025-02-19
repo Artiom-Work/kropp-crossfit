@@ -47,3 +47,9 @@
         	Performance:
         	Mobile version - 100%
         	Computer version - 100%
+
+8.  Adding a section calculate
+
+        	Performance:
+        	Mobile version - 98%
+        	Computer version - 100%

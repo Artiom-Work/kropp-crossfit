@@ -301,7 +301,7 @@ p:not([class]):not(:last-child) {
   right: 0;
   height: 100%;
   aspect-ratio: 1;
-  background: url(../../../icons/arrow-top-right.svg) no-repeat center/70%;
+  background: url(../../icons/arrow-top-right.svg) no-repeat center/70%;
   border: 1px solid #ffffff;
   border-radius: 50%;
 }
