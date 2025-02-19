@@ -359,6 +359,25 @@ p:not([class]):not(:last-child) {
   color: #000000;
 }
 
+select option:not(:first-child) {
+  color: #000000;
+}
+select.input:invalid {
+  color: #c4c4c4;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .title-big {
   font-size: clamp(24px, 3.12vw, 60px);
 }
@@ -1074,5 +1093,179 @@ p:not([class]):not(:last-child) {
 @media (max-width: 767px) {
   .family-image {
     height: 180px;
+  }
+}
+
+.calculate {
+  background-color: #131619;
+  padding-block: 146px;
+}
+@media (max-width: 1024px) {
+  .calculate {
+    padding-block: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .calculate {
+    padding-block: 60px;
+  }
+}
+.calculate-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 36px;
+     -moz-column-gap: 36px;
+          column-gap: 36px;
+}
+@media (max-width: 1024px) {
+  .calculate-inner {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .calculate-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+}
+.calculate-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 627px;
+}
+.calculate-title:not(:last-child) {
+  margin-bottom: 16px;
+}
+.calculate-description {
+  max-width: 385px;
+}
+.calculate-description:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+/* calculate-form */
+.calculate-form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 30px;
+}
+.calculate-form-body:not(:last-child) {
+  margin-bottom: 26px;
+}
+@media (max-width: 1024px) {
+  .calculate-form-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.calculate-input.wide {
+  grid-column: -1/1;
+}
+
+@media (max-width: 1024px) {
+  .calculate-button {
+    width: 100%;
+  }
+}
+
+/* calculate-table */
+.calculate-table-wrapper {
+  position: relative;
+  max-width: 610px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calculate-table-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #000000;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .calculate-table-wrapper::before {
+    display: none;
+  }
+}
+
+.calculate-table {
+  position: relative;
+  border-collapse: collapse;
+}
+.calculate-table :is(td, th):not(:first-child) {
+  padding-left: 30px;
+}
+.calculate-table :is(td, th):not(:last-child) {
+  border-right: 1px solid #707070;
+}
+.calculate-table tbody td {
+  border-top: 1px solid #707070;
+}
+.calculate-table tbody tr:last-child td:first-child {
+  position: relative;
+}
+.calculate-table tbody tr:last-child td:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1px;
+  background-color: #707070;
+}
+.calculate-table th {
+  padding-block: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.calculate-table td {
+  padding-block: 14px;
+}
+.calculate-table :is(td, th) {
+  padding-right: 30px;
+}
+@media (max-width: 1024px) {
+  .calculate-table :is(td, th) {
+    padding-block: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .calculate-table :is(td, th) {
+    padding-right: 10px;
+  }
+}
+.calculate-table tfoot {
+  color: #ffffff;
+}
+.calculate-table tfoot td {
+  padding-top: 33px;
+  padding-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .calculate-table tfoot td {
+    padding-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

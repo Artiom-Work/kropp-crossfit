@@ -1,0 +1,142 @@
+.calculate {
+  background-color: $color-dark-alternate;
+  padding-block: 146px;
+  @media (max-width: 1024px) {
+    padding-block: 100px;
+  }
+  @media (max-width: 767px) {
+    padding-block: 60px;
+  }
+  &-inner {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    @media (max-width: 1024px) {
+      column-gap: 20px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &-body {
+    flex-grow: 1;
+    max-width: 627px;
+  }
+  &-title {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-description {
+    max-width: 385px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/* calculate-form */
+.calculate-form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 30px;
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.calculate-input {
+  &.wide {
+    grid-column: -1 /1;
+  }
+}
+
+.calculate-button {
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+/* calculate-table */
+.calculate-table-wrapper {
+  position: relative;
+  max-width: 610px;
+  width: 100%;
+  @include flexCenter;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: $color-dark;
+    border-radius: 50%;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.calculate-table {
+  position: relative;
+  border-collapse: collapse;
+  & :is(td, th):not(:first-child) {
+    padding-left: 30px;
+  }
+  & :is(td, th):not(:last-child) {
+    border-right: 1px solid #707070;
+  }
+  tbody {
+    td {
+      border-top: 1px solid #707070;
+    }
+    tr:last-child {
+      td:first-child {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 70%;
+          height: 1px;
+          background-color: #707070;
+        }
+      }
+    }
+  }
+  th {
+    padding-block: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-light;
+  }
+  td {
+    padding-block: 14px;
+  }
+  & :is(td, th) {
+    padding-right: 30px;
+    @media (max-width: 1024px) {
+      padding-block: 10px;
+    }
+    @media (max-width: 767px) {
+      padding-right: 10px;
+    }
+  }
+  tfoot {
+    color: $color-light;
+    td {
+      padding-top: 33px;
+      padding-bottom: 0;
+      @media (max-width: 1024px) {
+        padding-top: 10px;
+      }
+    }
+  }
+}

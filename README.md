@@ -41,3 +41,9 @@
         	Performance:
         	Mobile version - 100%
         	Computer version - 100%
+
+7.  Adding a section family
+
+        	Performance:
+        	Mobile version - 100%
+        	Computer version - 100%
