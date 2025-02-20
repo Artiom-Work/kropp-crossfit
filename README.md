@@ -53,3 +53,5 @@
         	Performance:
         	Mobile version - 98%
         	Computer version - 100%
+
+    _Using tables slows down page loading_

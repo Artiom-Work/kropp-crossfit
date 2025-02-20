@@ -9,7 +9,15 @@ body {
   max-width: calc($container-width + $container-padding-x * 2);
   margin-inline: auto;
   padding-inline: $container-padding-x;
-  // height: 500px;
+}
+svg *[fill] {
+  fill: currentColor;
+}
+svg *[strike] {
+  strike: currentColor;
+}
+svg * {
+  transition-property: fill, stroke;
 }
 .container-wide {
   max-width: 1920px;
@@ -37,6 +45,9 @@ input,
 textarea,
 svg * {
   transition-duration: $transition-duration;
+}
+svg * {
+  transition-property: fill, stroke;
 }
 p {
   margin-block: 0;
